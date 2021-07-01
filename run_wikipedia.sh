@@ -1,0 +1,2 @@
+extra_args="${@:2}"
+./run.sh IRM-Wikipedia $1 -bs_count 20 -bs_direct_wt 0.1 -bs_alpha 0.01 -shortyK 100 -bilinear_shortyK 100 -fresh 1 -ova 0 -bilinear 1 -knn 1 -shortlist 1 -num_thread 20 ${extra_args}

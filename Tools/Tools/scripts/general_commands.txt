@@ -1,0 +1,14 @@
+Outputting all "Info"s of experiments:
+find . -iname "Info" | perl -w -ne 'chomp($_); print "________________\n"; print "$_\n"; system("cat $_"); print "\n\n";'
+
+Filtering log files off FastXML and other noisy outputs:
+cat log.txt | perl -w -ne 'chomp($_); next if($_ =~ m/^\s*tree.*$/ || $_ =~ m/^\s*node.*$/ || $_ =~ m/.*started.*/ || $_ =~ m/.*completed.*/); print "$_\n";'
+
+Converting epub to pdf
+ebook-convert file.epub file.pdf
+
+Grepping pdf files
+find . -iname '*.pdf' -exec pdfgrep <pattern> {} +
+
+Invert image color
+convert -negate in.png out.png

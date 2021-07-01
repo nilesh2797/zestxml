@@ -1,0 +1,1 @@
+./run.sh IRM-Amazon $1 -jaccard_sparsity 40 -direct_wt 0.2 -shortyK 500 -F 5 -incremental_type 0 -bilinear_shortyK 100 -fresh 0 -ova 1 -bilinear 0 -knn 1 -shortlist 1 -num_thread 32
