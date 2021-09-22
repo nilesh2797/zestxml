@@ -5,16 +5,16 @@ This is the official codebase for [KDD 2021](https://www.kdd.org/kdd2021/) paper
 > [Nilesh Gupta](https://nilesh2797.github.io/), [Sakina Bohra](https://www.linkedin.com/in/sakina-bohra-aa46b174/?originalSubdomain=in), [Yashoteja Prabhu](https://vervenumen.github.io/), Saurabh Purohit, [Manik Varma](http://manikvarma.org/)
 
 ## Running the Code
-```console
+```shell
 # Build
 make
 
 # Train and predict ZestXML on ZS-Eurlex-4.3K dataset
-./run_eurlex.sh all
+./run_eurlex.sh train
+./run_eurlex.sh predict
 
 # Install dependencies of metrics.py
-conda env create -f zestxml-env.yml
-conda activate zestxml-env
+pip install -r requirements.txt
 
 # Prints evaluation metrics
 python metrics.py ZS-Eurlex-4.3K
