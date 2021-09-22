@@ -20,6 +20,11 @@ make
 
 # Install dependencies of metrics.py
 pip install -r requirements.txt
+# Install pyxclib for evaluation
+git clone https://github.com/kunaldahiya/pyxclib.git
+cd pyxclib
+python3 setup.py install --user
+cd -
 
 # Prints evaluation metrics
 python metrics.py GZ-Eurlex-4.3K
