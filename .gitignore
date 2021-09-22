@@ -1,2 +1,4 @@
 Results/
 GZXML-Datasets/
+.ipynb_checkpoints/
+__pycache__
