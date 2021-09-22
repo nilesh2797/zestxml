@@ -56,6 +56,7 @@ void fill_default_params(Parameters& params)
     params.set<bool>("binary_relevance", true); // If true, use non-binary values in X_Y. If false, set all +ves in X_Y to 1
     params.set<float>("score_alpha", 0.9);
     params.set<int>("F", 10);
+    params.set<int>("shortyK", 100);
     
     params.set<bool>("bilinear_add_bias", false);
     params.set<bool>("bilinear_normalize", true);
