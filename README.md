@@ -40,8 +40,8 @@ Following are some statistics of these datasets:
   <tr> <td><b>Dataset</b></td> <td colspan="2"><b>Num Points</b></td> <td colspan="2"><b>Num Labels</b></td> <td colspan="2"><b>Num Features</b></td> </tr>
   <tr> <td></td> <td><b>Train</b></td> <td><b>Test</b></td> <td><b>Seen</b></td> <td><b>Unseen</b></td> <td><b>Point</b></td> <td><b>Label</b></td> </tr>
   <tr> <td><b>GZ-Eurlex-4.3K</b></td> <td>45,000</td> <td>6,000</td> <td>4,108</td> <td>163</td> <td>100,000</td> <td>24,316</td> </tr>
-  <tr> <td><b>GZ-Amazon-1M</b></td> <td>914,179</td> <td>1,465,767</td> <td>1,000,000</td> <td>1,476,381</td> <td>476,381</td> <td>483,725</td> </tr>
-  <tr> <td><b>GZ-Wikipedia-1M</b></td> <td>2,271,533</td> <td>2,705,425</td> <td>1,000,000</td> <td>1,438,196</td> <td>495,107</td> <td>776,612</td> </tr>
+  <tr> <td><b>GZ-Amazon-1M</b></td> <td>914,179</td> <td>1,465,767</td> <td>476,381</td> <td>483,725</td> <td>1,000,000</td> <td>1,476,381</td> </tr>
+  <tr> <td><b>GZ-Wikipedia-1M</b></td> <td>2,271,533</td> <td>2,705,425</td> <td>495,107</td> <td>776,612</td> <td>1,000,000</td> <td>1,438,196</td> </tr>
 </table>
 
 ## Cite
