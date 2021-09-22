@@ -1,2 +1,2 @@
 extra_args="${@:2}"
-./run.sh ZS-Eurlex-4.3K $1 -bilinear_classifier_pos_wt 2 -bs_count 80 -bs_direct_wt 0.2 -shortyK 500 -binary_relevance 1 -bilinear_shortyK 100 -fresh 1 -bilinear 1 -knn 1 -shortlist 1 -num_thread 12 ${extra_args}
+./run.sh ZS-Eurlex-4.3K $1 -bilinear_classifier_cost 5 -bs_count 120 -bs_direct_wt 0.8 -bs_alpha 0.02 -shortyK 150 -bilinear_shortyK 150 -score_alpha 0.9 -num_thread 1 ${extra_args}
