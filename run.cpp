@@ -55,7 +55,7 @@ void fill_default_params(Parameters& params)
     params.set<float>("bs_alpha", 0.2);
     params.set<float>("bs_direct_wt", 0.2);
     params.set<bool>("binary_relevance", true); // If true, use non-binary values in X_Y. If false, set all +ves in X_Y to 1
-    params.set<float>("score_alpha", 0.85);
+    params.set<float>("score_alpha", 0.9);
     params.set<int>("F", 10);
     
     params.set<bool>("bilinear_add_bias", false);
@@ -290,9 +290,9 @@ int main(int argc, char const *argv[])
     string type = params.get<string>("type");
     LOGN("running : " << type << " using " << params.get<int>("num_thread") << " thread(s)");
 
-    if(type == "xhtp_approx" or type == "all")
+    if(type == "xhtp_approx" or type == "train" or type == "all")
         run_xhtp_approx(params);
-    if(type == "xhtp_fine_tune" or type == "all")
+    if(type == "xhtp_fine_tune" or type == "train" or type == "all")
         run_xhtp_fine_tune(params);
     if(type == "predict" or type == "all")
         run_predict(params);

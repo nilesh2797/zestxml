@@ -216,9 +216,9 @@ void train(SMatF* trn_X_Y, VecI seen_labels, SMatF* trn_X_Xf, SMatF* Y_Yf, SMatF
 
 	// SMatF* shortlist = get_exact_shortlist(trn_X_Xf, Y_Yf, sparsity_pattern, params);
 	SMatF* shortlist = get_approx_shortlist(trn_X_Y, trn_X_Xf, Y_Yf, sparsity_pattern, params);
+    shortlist->dump(params.get<string>("model_dir") + OS_SEP + "shortlist.bin");
 	LOGN("[STAT] nnz of shortlist    : " << shortlist->get_nnz());
 	LOGN("[STAT] recall of shortlist : " << shortlist->get_recall(trn_X_Y) << "%");
-	shortlist->dump(params.get<string>("model_dir") + OS_SEP + "shortlist.bin");
 
     LOGN("\ntraining bilinear classifier");
     shortlist->add(trn_X_Y);

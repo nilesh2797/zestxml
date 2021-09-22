@@ -38,7 +38,7 @@ elif "Wiki" in dataset: A = 0.5; B = 0.4
 else : A = 0.55; B = 1.5
 inv_prop = xc_metrics.compute_inv_propesity(trn_X_Y, A, B)
 
-score_mat = read_bin_spmat(f'{RES_DIR}/score_mat.bin').copy()
+score_mat = _filter(read_bin_spmat(f'{RES_DIR}/score_mat.bin').copy(), filter_mat)
 print(_c("\nMetrics", attr="yellow"))
 with CaptureIO(capture) as capture:
     printacc(score_mat, X_Y=tst_X_Y, inv_prop_=inv_prop)
