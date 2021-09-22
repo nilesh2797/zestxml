@@ -3,7 +3,6 @@
 
 #include "mat.h"
 #include "utils.h"
-#include "algos.h"
 #include "timer.h"
 #include "zestxml.h"
 #include "parameters.h"
