@@ -15,7 +15,7 @@ mkdir -p ${MODEL_DIR}
 		-tst_X_Xf ${DATA_DIR}/tst_X_Xf.txt \
 		-Y_Yf ${DATA_DIR}/Y_Yf.txt \
 		-trn_X_Y ${DATA_DIR}/trn_X_Y.txt \
-        -tst_X_Y ${DATA_DIR}/tst_X_Y.txt \
+		-tst_X_Y ${DATA_DIR}/tst_X_Y.txt \
 		-Xf ${DATA_DIR}/Xf.txt \
 		-Yf ${DATA_DIR}/Yf.txt \
 		-res_dir ${RES_DIR} \
