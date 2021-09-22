@@ -1,4 +1,4 @@
-<img src="KDD_Logo.jpg" height="150" align="right"/>
+<img src="KDD_Logo.jpg" height="100" align="right"/>
 
 # Generalized Zero-Shot Extreme Multi-Label Learning
 This is the official codebase for [KDD 2021](https://www.kdd.org/kdd2021/) paper [Generalized Zero-Shot Extreme Multi-Label Learning](http://manikvarma.org/pubs/gupta21.pdf)
