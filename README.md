@@ -19,3 +19,13 @@ conda activate zestxml-env
 # Prints evaluation metrics
 python metrics.py ZS-Eurlex-4.3K
 ```
+## Cite
+```bib
+@InProceedings{Gupta21,
+  author    = "Gupta, N. and Bohra, S. and Prabhu, Y. and Purohit, S. and Varma, M.",
+  title     = "Generalized Zero-Shot Extreme Multi-label Learning",
+  booktitle = "Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+  month     = "August",
+  year      = "2021"
+}
+```
