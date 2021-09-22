@@ -14,7 +14,7 @@ Generalized Zero-shot XML (`GZXML`) is a paradigm where the task is to **tag a d
 # Build
 make
 
-# Train and predict ZestXML on ZS-Eurlex-4.3K dataset
+# Train and predict ZestXML on GZ-Eurlex-4.3K dataset
 ./run_eurlex.sh train
 ./run_eurlex.sh predict
 
@@ -22,7 +22,7 @@ make
 pip install -r requirements.txt
 
 # Prints evaluation metrics
-python metrics.py ZS-Eurlex-4.3K
+python metrics.py GZ-Eurlex-4.3K
 ```
 ## Public Datasets
 Following Datasets were used in the paper for benchmarking `GZXML` algorithms, all datasets can be downloaded from :
