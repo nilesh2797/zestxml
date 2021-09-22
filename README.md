@@ -25,7 +25,7 @@ pip install -r requirements.txt
 python metrics.py GZ-Eurlex-4.3K
 ```
 ## Public Datasets
-Following Datasets were used in the paper for benchmarking `GZXML` algorithms, all datasets can be downloaded from :
+Following Datasets were used in the paper for benchmarking `GZXML` algorithms (all datasets can be downloaded from [here](link))
 * **GZ-EURLex-4.3K**, Document Tagging of EU law pages
 * **GZ-Wikipedia-1M**, Document Tagging of Wikipedia pages
 * **GZ-Amazon-1M**, Item to Item Recommendation of Amazon products
