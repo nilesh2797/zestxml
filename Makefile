@@ -1,8 +1,7 @@
 CXXFLAGS=-std=c++11 -O3
 LIBFLAGS=-pthread -fopenmp
-CPPDIR=Tools/Tools/cpp
 SOURCEDIR=Source
-INC=-I Tools/Tools/cpp -I $(SOURCEDIR)
+INC=-I $(SOURCEDIR)
 
 all: clean run
 
