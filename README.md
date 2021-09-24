@@ -14,6 +14,14 @@ Generalized Zero-shot XML (`GZXML`) is a paradigm where the task is to **tag a d
 # Build
 make
 
+# Download GZ-Eurlex-4.3K dataset
+mkdir GZXML-Datasets
+cd GZXML-Datasets
+pip install gdown
+gdown "https://drive.google.com/uc?id=1j27bQZol6gOQ7AATawShcF4jXJr3Venb"
+tar -xvzf GZ-Eurlex-4.3K
+cd -
+
 # Train and predict ZestXML on GZ-Eurlex-4.3K dataset
 ./run_eurlex.sh train
 ./run_eurlex.sh predict
