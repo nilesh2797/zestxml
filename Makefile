@@ -6,7 +6,7 @@ INC=-I $(SOURCEDIR)
 all: clean run
 
 run:
-	$(CXX) -o run $(CXXFLAGS) $(INC) run.cpp ${CPPDIR}/linear_classifiers.cpp ${CPPDIR}/algos.cpp ${SOURCEDIR}/zestxml.cpp ${SOURCEDIR}/helper.cpp $(LIBFLAGS)
+	$(CXX) -o run $(CXXFLAGS) $(INC) run.cpp ${SOURCEDIR}/linear_classifiers.cpp ${SOURCEDIR}/zestxml.cpp ${SOURCEDIR}/helper.cpp $(LIBFLAGS)
 
 clean:
 	rm -f run
