@@ -19,7 +19,7 @@ mkdir GZXML-Datasets
 cd GZXML-Datasets
 pip install gdown
 gdown "https://drive.google.com/uc?id=1j27bQZol6gOQ7AATawShcF4jXJr3Venb"
-tar -xvzf GZ-Eurlex-4.3K
+tar -xvzf GZ-Eurlex-4.3K.tar.gz
 cd -
 
 # Train and predict ZestXML on GZ-Eurlex-4.3K dataset
