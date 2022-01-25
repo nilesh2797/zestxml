@@ -289,7 +289,7 @@ int main(int argc, char const *argv[])
 
     string type = params.get<string>("type");
     if(params.get<int>("num_thread") == 0)
-        params.set<int>("num_thread", omp_get_num_threads());
+        params.set<int>("num_thread", omp_get_max_threads());
     LOGN("running : " << type << " using " << params.get<int>("num_thread") << " thread(s)");
 
     if(type == "xhtp_approx" or type == "train" or type == "all")
