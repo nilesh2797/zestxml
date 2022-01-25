@@ -62,7 +62,7 @@ All sparse matrices are stored in text sparse matrix format, please refer to the
 * **`(trn/tst/val)_X_Y.txt`**: sparse matrix (*documents x labels*) representing *(trn/tst/val)* document-label relevance matrix.
 
 ### Text sparse matrix format
-This is a plain text row major sparse representation of a matrix. Following are the details of the format :
+This is a plain-text row-major representation of a sparse matrix. Following are the details of the format :
 - The first line in this format is two space separated integers denoting the dimensions of the matrix (i.e. `num_row` `num_column`)
 - `num_row` lines follow the first line and each line represents a sparse row vector
 - a sparse row vector is represented as space separated non zero entries of the vector, an entry in the vector is represented as `<index>:<value>`. For example if the vector is `[0, 0, 0.5, 0.4, 0, 0.2]` then its sparse vector text representation is `2:0.5 3:0.4 5:0.2` (NOTE : the indexing starts from 0)
