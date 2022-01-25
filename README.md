@@ -66,7 +66,7 @@ This is a plain-text row-major representation of a sparse matrix. Following are 
 - The first line in this format is two space separated integers denoting the dimensions of the matrix (i.e. `num_row` `num_column`)
 - `num_row` lines follow the first line and each line represents a sparse row vector
 - a sparse row vector is represented as space separated non zero entries of the vector, an entry in the vector is represented as `<index>:<value>`. For example if the vector is `[0, 0, 0.5, 0.4, 0, 0.2]` then its sparse vector text representation is `2:0.5 3:0.4 5:0.2` (NOTE : the indexing starts from 0)
-- You can check `GZ-EURLex-4.3K/trn_X_Xf.txt` for sample example of a sparse matrix format
+- You can check `GZ-Eurlex-4.3K/trn_X_Xf.txt` for sample example of a sparse matrix format
 
 ## Cite
 ```bib
