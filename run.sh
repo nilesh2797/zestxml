@@ -25,5 +25,8 @@ mkdir -p ${MODEL_DIR}
 		-propensity_A 0.55 \
 		-propensity_B 1.5 \
 		-bilinear_normalize 0 \
+		-bs_count 40 \
+		-bs_alpha 0.01 \
+		-bs_direct_wt 0.1 \
 		${extra_args} \
 		| tee -a ${logfile}
