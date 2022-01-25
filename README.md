@@ -52,6 +52,21 @@ Following are some statistics of these datasets:
   <tr> <td><b>GZ-Wikipedia-1M</b></td> <td>2,271,533</td> <td>2,705,425</td> <td>495,107</td> <td>776,612</td> <td>1,000,000</td> <td>1,438,196</td> </tr>
 </table>
 
+## Data Format
+All sparse matrices are stored in text sparse matrix format, please refer to the text sparse matrix format subsection for more details.
+* **`Xf.txt`**: all features used in `tf-idf` representation of documents (`(trn/tst/val)_X_Xf`), `ith` line denotes `ith` feature in the tf-idf representation. In particular, for datasets used in the paper, it's the stemmed bigram and unigram features of documents but you can choose to have any set of features depending on your application.
+* **`Yf.txt`**: similar to `Xf.txt` it represents features of all labels. In addition to unigrams and bigrams, we also add a unique feature specific to each label (represented by `__label__<i>__<label-i-text>`, this feature will only be present in `ith` label's features), this allows the model to have label specific parameters and helps it to do well on many-shot labels. Features with `__parent__` in them are only specific to the `GZ-EURLex-4.3K` dataset because raw labels in this dataset have some additional information about parent concepts of each label, you can safely choose to ignore these features for any other/new dataset.
+* **`(trn/tst/val)_X_Xf.txt`**: this is the sparse matrix (*documents x document-features*) representing `tf-idf` feature matrix of *(trn/tst/val)* input documents.
+* **`Y_Yf.txt`**: similar to `(trn/tst/val)_X_Xf.txt` but for labels, this is the sparse matrix (*labels x label-features*) representing `tf-idf` feature matrix of labels.
+* **`(trn/tst/val)_X_Y.txt`**: this is the sparse matrix (*documents x labels*) representing *(trn/tst/val)* document-label relevance matrix.
+
+### Text sparse matrix format
+This is a plain text column major sparse representation of a matrix. Following are the details of the format :
+- The first line in this format is two space separated integers denoting the dimensions of the matrix (i.e. `num_row` `num_column`)
+- `num_column` lines follow the first line and each line represents a sparse column vector
+- a sparse column vector is represented as space separated non zero entries of the vector, a unit entry in the vector is represented as `<index>:<value>`. For example if the vector is `[0, 0, 0.5, 0.4, 0, 0.2]` then its sparse vector text representation is `2:0.5 3:0.4 5:0.2` (NOTE : the indexing starts from 0)
+- You can check `GZ-EURLex-4.3K/trn_X_Xf.txt` for sample example of a sparse matrix format
+
 ## Cite
 ```bib
 @InProceedings{Gupta21,
