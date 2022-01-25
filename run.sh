@@ -20,7 +20,7 @@ mkdir -p ${MODEL_DIR}
 		-Yf ${DATA_DIR}/Yf.txt \
 		-res_dir ${RES_DIR} \
 		-model_dir ${MODEL_DIR} \
-		-num_thread 12 \
+		-num_thread 0 \
 		-type $type \
 		-propensity_A 0.55 \
 		-propensity_B 1.5 \
